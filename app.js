@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const path = require("path");
 const globalRouter = require("./routers/globalRouter");
+const boardRouter = require("./routers/boardRouter");
 
 const PORT = 4000;
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
 app.use("/", globalRouter);
+app.use("/login", boardRouter);
 
 app.listen(PORT, () => {
     console.log("4000 SERVER START");
