@@ -15,9 +15,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     position: fixed;
-
     font-size: 15px;
 }
 
