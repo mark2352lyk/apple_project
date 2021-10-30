@@ -21,39 +21,35 @@ const conn = mysql2.createConnection({
 
 const router = express.Router();
 
-router.get("/create", (req, res, next) => {
-  res.render("screens/create");
-});
+router.post("/main", (req, res, next) => {
+  const emailCheckQuery = `
+        SELECT  email
+          FROM  users
+         WHERE  email = "${req.body.email}"
+    `;
 
-router.post("/create", async (req, res, next) => {
-  const { title, content } = req.body;
-
-  const createQuery = `
-    INSERT INTO boards (
-        title,
-        content,
-        createAt,
-        UserId
-    ) VALUES (  
-        "${title}",
-        "${content}",
-        now(),
-        1
-    )
-  `;
-
-  try {
-    conn.query(createQuery, (error, result) => {
-      if (error) {
-        return res.status(400).send("잘못된 요청 입니다. 다시 시도해주세요.");
+  conn.query(emailCheckQuery, (error, result) => {
+    if (error) {
+      return res.status(403).send("다시 시도해주세요.");
+    } else {
+      if (result.length > 0) {
+        return res.status(403).send("이미 가입된 이메일이 존재합니다");
+      } else {
+        const userInsertQuery = `
+        INSERT INTO users(
+            email,
+            passwword,
+            nickname
+        ) VALUES (
+            "${req.body.email}",
+            "${req.body.password}",
+            "${req.body.nickname}"
+        )
+      `;
       }
-
-      res.redirect(`/login/${result.insertId}`);
-    });
-  } catch (error) {
-    console.error(error);
-    return res.status(400).send("게시글 생성에 실패했습니다.");
-  }
+    }
+  });
+  res.render("screens/main");
 });
 
 module.exports = router;
