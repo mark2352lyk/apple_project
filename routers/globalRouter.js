@@ -22,10 +22,6 @@ router.get("/watch", (req,res,next) => {
     res.render("screens/watch");
 });
 
-router.get("/review", (req,res,next) => {
-    res.render("screens/review");
-});
-
 router.get("/login", (req,res,next) => {
     res.render("screens/login");
 });

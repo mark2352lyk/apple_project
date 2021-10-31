@@ -1,0 +1,80 @@
+.login__main {
+    width: 100%;
+    height: 800px;
+}
+
+.login__main .login__main_div1 {
+    width: 100%;
+    height: 300px;
+
+    background-color: #918D97;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login__main .login__main_div1 .logo {
+    width: 150px;
+    height: 100px;
+    margin-top: 160px;
+    background-size: cover;
+    background-image: url("https://image.ajunews.com/content/image/2021/04/14/20210414081723110830.png");
+}
+
+.login__main .login__main_div2 {
+    width: 100%;
+    height: 500px;
+
+    background-color: #918D97;
+    display: flex;
+    justify-content: center;
+}
+
+.email__div {
+    margin-left: 70px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.email__input {
+    width: 170px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.password__div {
+    margin-left: 14px; 
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.password__input {
+    width: 170px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.nickname__div {
+    margin-left: 27px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.nickname__input {
+    width: 170px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.signup__buttun {
+    margin-left: 215px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: lightskyblue;
+}
+
+.signup__buttun:hover {
+    background-color: mediumturquoise;
+    cursor: pointer;
+    margin-top: 100px;
+}
