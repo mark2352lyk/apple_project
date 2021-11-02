@@ -8,54 +8,37 @@ html(lang="en")
         link(rel="stylesheet", href="/css/styles.css")
     body 
         header.header
-            div.header1
-                div(class="hd")
-                div(class="img")
+            header.leftHeader
+            header.header1 
+                div.img
                     a(href="/") 
                         img(src="https://image.ajunews.com/content/image/2021/04/14/20210414081723110830.png" width="60px")
-                div
-                    a(href="/iphone") IPHONE  
-                div
-                    a(href="/ipad") IPAD 
-                div
-                    a(href="/mac") MAC
-                div
-                    a(href="/watch") WATCH 
-                div
-                    a(href="/review") REVIEW
-                div
-                    a(href="/login") LOGIN
-
-            div.header2
-                div.just
-                div.iphone
-                    p IPHONE
-                    a(href="a") a
-                    a(href="b") b
-                    a(href="c") c
-                    a(href="d") d 
-                div.ipad
-                    a(href="a") a
-                    a(href="b") b
-                    a(href="c") c
-                    a(href="d") d
-                div.mac
-                    a(href="a") a
-                    a(href="b") b
-                    a(href="c") c
-                    a(href="d") d
-                div.watch
-                    a(href="a") a 
-                    a(href="b") b
-                    a(href="c") c
-                    a(href="d") d
-                div.review
-                    a(href="a") a
-                    a(href="b") b
-                    a(href="c") c
-                    a(href="d") d
-                div.login 
-                    a(href="a") a
+            header.header2
+                a(href="/iphone") 
+                    div.iphone IPHONE
+                div.iphoneHover  
+            header.header3
+                a(href="/ipad") 
+                    div.ipad IPAD
+                div.ipadHover  
+            header.header4 
+                a(href="/mac")
+                    div.mac MAC
+                div.macHover 
+            header.header5 
+                a(href="/watch") 
+                    div.watch WATCH
+                div.watchHover         
+            header.header6 
+                a(href="/board/review") 
+                    div.review REVIEW        
+            header.header7 
+                a(href="/join")
+                    div.join 회원가입
+            header.header8 
+                a(href="/login")
+                    div.login 로그인
+            header.rightHeader
 
 
         block content
