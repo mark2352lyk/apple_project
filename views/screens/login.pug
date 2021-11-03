@@ -5,16 +5,21 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
+        link(rel="stylesheet", href="/css/styles.css")
     body 
-        form(action="/login/main" method="POST")
-            div 
-                label(htmlFor="email") EMAIL 
-                input(type="email" name="email" id="email" required)
-            div 
-                label(htmlFor="password") PASSWORD 
-                input(type="password" name="password" id="password" required)
-            div 
-                label(htmlOFr="nickname") NICKNAME
-                input(type="text" name="nickname" id="nickname" required)
+        div.login__main
+            div.login__main_div1
+                div.logo
+            div.login__main_div2
+                form(action="/login/main" method="POST")
+                    div.email__div 
+                        label(htmlFor="email") EMAIL 
+                        input(type="email" name="email" id="email" required).email__input
+                    div.password__div 
+                        label(htmlFor="password") PASSWORD 
+                        input(type="password" name="password" id="password" required).password__input
+                    div.nickname__div 
+                        label(htmlOFr="nickname").nickname__label NICKNAME
+                        input(type="text" name="nickname" id="nickname" required).nickname__input
 
-            input(type="submit" value="SIGN UP")
+                    input(type="submit" value="SIGN UP").signup__buttun
