@@ -1,0 +1,32 @@
+.reviewmain {
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewWrite {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewButton {
+    width: 20%;
+    height: 100px;
+    background-color: lightcyan;
+    font-family: "Cafe24SsurroundAir";
+    font-size: 20px;
+}
+
+.reviewButton a {
+    color: black;
+    font-family: "Cafe24SsurroundAir";
+    text-decoration: none;
+}

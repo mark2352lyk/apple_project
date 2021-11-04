@@ -4,6 +4,7 @@ const path = require("path");
 const globalRouter = require("./routers/globalRouter");
 const loginRouter = require("./routers/loginRouter");
 const boardRouter = require("./routers/boardRouter");
+const reviewRouter = require("./routers/reviewRouter")
 
 const PORT = 4000;
 const app = express();
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use("/", globalRouter);
 app.use("/login", loginRouter);
 app.use("/board", boardRouter);
+app.use("/review", reviewRouter);
 
 app.listen(PORT, () => {
     console.log("4000 SERVER START");

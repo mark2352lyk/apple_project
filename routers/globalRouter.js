@@ -28,6 +28,6 @@ router.get("/join", (req,res,next) => {
 
 router.get("/login", (req,res,next) => {
     res.render("screens/login")
-})
+});
 
 module.exports = router;

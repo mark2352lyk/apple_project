@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width= , initial-scale=1.0")
+        title Document
+    body 
+        form(action="/review/wrote" method="GET")
+            div
+                label(htmlFor="nickname") NICKNAME
+                input(type="text" name="nickname" id="nickname" required)
+            div
+                label(htmlFor="review") REVIEW 
+                input(type="text" name="review" id="review" required) 
+            div
+                label(htmlFor="grade") 평점
+                input(type="int" name="grade" id="grade" required)
+                
+            
+            
