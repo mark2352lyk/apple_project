@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'BBTreeGB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .login__main {
     width: 100%;
     height: 800px;
@@ -33,7 +41,8 @@
 .email__div {
     margin-left: 70px;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-family: 'BBTreeGB';
+    font-size: 20px;
 }
 
 .email__input {
@@ -45,7 +54,8 @@
 .password__div {
     margin-left: 14px; 
     margin-bottom: 10px;
-    font-size: 25px;
+    font-family: 'BBTreeGB';
+    font-size: 20px;
 }
 
 .password__input {
@@ -57,7 +67,8 @@
 .nickname__div {
     margin-left: 27px;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-family: 'BBTreeGB';
+    font-size: 20px;
 }
 
 .nickname__input {
@@ -70,10 +81,11 @@
     margin-left: 215px;
     margin-bottom: 10px;
     font-size: 20px;
-    background-color: lightskyblue;
+    font-family: 'BBTreeGB';
+    background-color: rgb(179, 196, 207);
 }
 
 .signup__buttun:hover {
-    background-color: mediumturquoise;
+    background-color: rgb(106, 123, 139);
     cursor: pointer;
 }

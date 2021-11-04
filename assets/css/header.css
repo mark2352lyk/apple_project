@@ -16,7 +16,7 @@
 
 .header {
     width: 100%;
-    height: 5px;
+    height: 50px;
     font-size: 15px;
     display: flex;
     flex-direction: row;
