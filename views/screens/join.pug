@@ -9,9 +9,9 @@ html(lang="en")
     body 
         div.login__main
             div.login__main_div1
-                div.logo 
+                div.logo
             div.login__main_div2
-                form(action="/login/login" method="POST")
+                form(action="/login/join" method="POST")
                     div.email__div 
                         label(htmlFor="email") EMAIL 
                         input(type="email" name="email" id="email" required).email__input
@@ -22,4 +22,4 @@ html(lang="en")
                         label(htmlOFr="nickname").nickname__label NICKNAME
                         input(type="text" name="nickname" id="nickname" required).nickname__input
 
-                    input(type="submit" value="LOGIN").signup__buttun
+                    input(type="submit" value="SIGN UP").signup__buttun

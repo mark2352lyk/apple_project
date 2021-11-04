@@ -22,8 +22,12 @@ router.get("/watch", (req,res,next) => {
     res.render("screens/watch");
 });
 
-router.get("/login", (req,res,next) => {
-    res.render("screens/login");
+router.get("/join", (req,res,next) => {
+    res.render("screens/join");
 });
+
+router.get("/login", (req,res,next) => {
+    res.render("screens/login")
+})
 
 module.exports = router;

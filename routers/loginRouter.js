@@ -21,7 +21,7 @@ const conn = mysql2.createConnection({
 
 const router = express.Router();
 
-router.post("/main", (req, res, next) => {
+router.post("/join", (req, res, next) => {
   const emailCheckQuery = `
         SELECT  email
           FROM  users
@@ -46,10 +46,40 @@ router.post("/main", (req, res, next) => {
             "${req.body.nickname}"
         )
       `;
+
+        conn.query(userInsertQuery, (error, result) => {
+          if (error) {
+            console.error(error);
+            return res.status(400).send("회원가입에 실패했습니다.");
+          } 
+        });
       }
     }
   });
   res.render("screens/main");
+});
+
+router.post("/login", (req,res,next) => {
+  const emailCheckQuery = `
+    SELECT  email
+      FROM  users
+     WHERE  email = "${req.body.email}"
+       AND  passwword = "${req.body.password}"
+       AND  nickname = "${req.body.nickname}"
+  `;
+
+  conn.query(emailCheckQuery, (error,result) => {
+    if(error) {
+      return res.status(403).send("아이디 또는 비밀번호 또는 닉네임이 틀렸습니다.");
+    }else{
+      if (result.length > 0) {
+        res.render("screens/loginMain");
+      }
+      else {
+        return res.status(403).send("아이디 또는 비밀번호 또는 닉네임이 틀렸습니다.");
+      }
+    }
+  });
 });
 
 module.exports = router;
