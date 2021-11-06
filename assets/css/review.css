@@ -1,10 +1,9 @@
 .reviewmain {
     width: 100%;
-    padding: 15px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .reviewWrite {
@@ -29,4 +28,59 @@
     color: black;
     font-family: "Cafe24SsurroundAir";
     text-decoration: none;
+}
+
+.Selectreview {
+    width: 100%;
+    height: 6px;
+}
+
+.ho {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.reviewNickname {
+    width: 15%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewContent {
+    width: 15%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewGrade {
+    width: 15%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewKinds {
+    width: 15%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr {
+    background-color: black;
 }

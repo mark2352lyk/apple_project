@@ -19,9 +19,5 @@ const conn = mysql2.createConnection({
     database: dbConfig.dbName,
 });
 
-router.get("/review", (req,res,next) => {
-    res.render("screens/review");
-});
-
 module.exports = router;
 

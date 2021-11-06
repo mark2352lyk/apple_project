@@ -1,8 +1,20 @@
 extends ../layouts/Loginbase.pug
 
 block content
-    section.reviewmain
+    main.reviewmain
         div.reviewWrite
             div.reviewButton 
-                a(href="/review/write") 리뷰작성하기 
-
+                a(href="/review") 리뷰작성하기   
+        .Selctereview            
+            each review in Selectreview_db
+                div.Selctereview
+                    div.ho
+                        div.reviewNickname 
+                            div #{review.nickname}
+                        div.reviewContent 
+                            div #{review.content}
+                        div.reviewGrade 
+                            div #{review.grade}점
+                        div.reviewKinds 
+                            div #{review.kinds}
+                        hr

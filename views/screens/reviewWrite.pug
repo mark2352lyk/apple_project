@@ -6,16 +6,19 @@ html(lang="en")
         meta(name="viewport", content="width= , initial-scale=1.0")
         title Document
     body 
-        form(action="/review/wrote" method="GET")
+        form(action="/review/wrote" method="POST")
             div
-                label(htmlFor="nickname") NICKNAME
+                label(htmlFor="nickname") 닉네임
                 input(type="text" name="nickname" id="nickname" required)
             div
-                label(htmlFor="review") REVIEW 
-                input(type="text" name="review" id="review" required) 
+                label(htmlFor="content") 내용 
+                input(type="text" name="content" id="content" required) 
             div
                 label(htmlFor="grade") 평점
-                input(type="int" name="grade" id="grade" required)
-                
+                input(type="number" name="grade" id="grade" min="1" max="100" required)
+            div
+                label(htmlFor="kinds") 기종
+                input(htmlFor="text" name="kinds" id="kinds" required)
+            input(type="submit" value="작성하기")
             
             
