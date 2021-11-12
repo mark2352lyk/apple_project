@@ -77,6 +77,13 @@
     display: none;
 }
 
+.iphoneHover .iphone13pro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .header2:hover .iphoneHover{
     display: flex;
     animation: fade-in 0.5s;

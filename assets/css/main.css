@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -35,7 +35,7 @@
     color: black;
     margin: 5px 0px;
     margin-top: 10px;
-    font-family: 'Pretendard-Regular';
+    font-family: 'twayair';
 }
 
 .main_top .main_ipd {
@@ -58,7 +58,7 @@
     color: black;
     margin: 5px 0px;
     margin-top: 10px;
-    font-family: 'Pretendard-Regular';
+    font-family: 'twayair';
 }
 
 .main_top .main_air {
@@ -84,7 +84,7 @@
     color: black;
     margin: 5px 0px;
     margin-top: 10px;
-    font-family: 'Pretendard-Regular';
+    font-family: 'twayair';
 }
 
 .main_top .main_wat {
@@ -107,7 +107,7 @@
     color: black;
     margin: 5px 0px;
     margin-top: 10px;
-    font-family: 'Pretendard-Regular';
+    font-family: 'twayair';
 }
 
 .main_top .just {

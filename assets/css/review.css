@@ -17,15 +17,20 @@
 }
 
 .reviewButton {
-    width: 20%;
+    width: 100%;
     height: 100px;
-    background-color: lightcyan;
+    background-color: #6D6968;
     font-family: "Cafe24SsurroundAir";
     font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
 }
 
 .reviewButton a {
-    color: black;
+    color: white;
     font-family: "Cafe24SsurroundAir";
     text-decoration: none;
 }
