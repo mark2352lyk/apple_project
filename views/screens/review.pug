@@ -17,4 +17,6 @@ block content
                             div #{review.grade}점
                         div.reviewContent 
                             div #{review.content}
+                            form(action="/delect/delect" method="POST")
+                                input(type="submit" value="삭제하기")
                         hr.hr
